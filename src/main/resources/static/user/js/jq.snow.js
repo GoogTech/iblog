@@ -15,6 +15,8 @@
 									flakeColor	: "#FFFFFF"	
 								},
 				options			= $.extend({}, defaults, options);
+
+			var interval		= setInterval( function(){
 				var startPositionLeft 	= Math.random() * documentWidth - 100,
 				 	startOpacity		= 0.5 + Math.random(),
 					sizeFlake			= options.minSize + Math.random() * options.maxSize,
