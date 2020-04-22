@@ -204,20 +204,6 @@
     /*]]>*/
 </script>
 
-
-<!-- 下面是调用'雪花飘落'的方法和参数说明,详情参考:https://blog.csdn.net/ghjzzhg/article/details/86088481 -->
-<script th:src="@{//cdn.bootcss.com/jquery/2.2.3/jquery.min.js}"></script>
-<script th:src="@{../../../static/user/js/jq.snow.js}"></script>
-<script>
-    $(function(){
-        $.fn.snow({
-            minSize: 5,		//雪花的最小尺寸
-            maxSize: 40, 	//雪花的最大尺寸
-            newOn: 80		//雪花出现的频率 这个数值越小雪花越多
-        });
-    });
-</script>
-
 <!-- 网站页面点击爆炸特效,详情参考:https://www.zxki.cn/978.html -->
 <canvas class="fireworks" style="position:fixed;left:0;top:0;z-index:99999999;pointer-events:none;"></canvas>
 <script th:src="@{../../../static/user/js/baozha1.js}"></script>

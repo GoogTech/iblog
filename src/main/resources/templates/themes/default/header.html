@@ -24,6 +24,19 @@
     <!-- 添加萌萌哒的二次元女动漫玩偶人物(看板娘),详情参考:https://github.com/stevenjoezhang/live2d-widget -->
     <link th:href="@{//cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css}" rel="stylesheet"/>
     <script src="https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"></script>
+
+    <!-- 下面是调用'雪花飘落'的方法和参数说明,详情参考:https://blog.csdn.net/ghjzzhg/article/details/86088481 -->
+    <!--<script th:src="@{//cdn.bootcss.com/jquery/2.2.3/jquery.min.js}"></script>-->
+    <script th:src="@{../../../static/user/js/jq.snow.js}"></script>
+    <script>
+        $(function(){
+            $.fn.snow({
+                minSize: 5,		//雪花的最小尺寸
+                maxSize: 40, 	//雪花的最大尺寸
+                newOn: 80		//雪花出现的频率 这个数值越小雪花越多
+            });
+        });
+    </script>
 </head>
 <body  gtools_scp_screen_capture_injected="true" th:class="${is_post}?'':'bg-grey'">
 <!--[if lt IE 8]>
